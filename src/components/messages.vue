@@ -16,9 +16,9 @@
         <messages :message="item" />
       </div>
       <div class="new-comment">
-        <p v-show="!isComment" @click="isComment = !isComment">
+        <button v-show="!isComment" @click="isComment = !isComment">
           Комментировать
-        </p>
+        </button>
         <new-comment :message="message" v-model="isComment" />
       </div>
     </div>
